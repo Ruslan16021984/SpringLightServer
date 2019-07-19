@@ -7,50 +7,66 @@
     <groupId>com.gmail3333333.some.server</groupId>
     <artifactId>com.gmail3333333.some.server</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <properties>
+        <commons-dbcp2.version>2.6.0</commons-dbcp2.version>
+        <spring-core.version>5.1.8.RELEASE</spring-core.version>
+        <javax.servlet-api.version>4.0.1</javax.servlet-api.version>
+        <postgresql.version>42.2.6</postgresql.version>
+        <spring-data-jpa.version>2.1.9.RELEASE</spring-data-jpa.version>
+        <hibernate-entitymanager.version>5.4.3.Final</hibernate-entitymanager.version>
+    </properties>
     <packaging>war</packaging>
     <dependencies><!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
-            <version>5.1.8.RELEASE</version>
+            <version>${spring-core.version}</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
-            <version>5.1.8.RELEASE</version>
+            <version>${spring-core.version}</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
-            <version>5.1.8.RELEASE</version>
+            <version>${spring-core.version}</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
-            <version>4.0.1</version>
+            <version>${javax.servlet-api.version}</version>
             <scope>provided</scope>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
-            <version>42.2.6</version>
+            <version>${postgresql.version}</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-jpa -->
         <dependency>
             <groupId>org.springframework.data</groupId>
             <artifactId>spring-data-jpa</artifactId>
-            <version>2.1.9.RELEASE</version>
+            <version>${spring-data-jpa.version}</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-entitymanager -->
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-entitymanager</artifactId>
-            <version>5.4.3.Final</version>
+            <version>${hibernate-entitymanager.version}</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-dbcp2 -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-dbcp2</artifactId>
+            <version>${commons-dbcp2.version}</version>
+        </dependency>
+<!--ctrl+alt+v-->
+
 
 
 
